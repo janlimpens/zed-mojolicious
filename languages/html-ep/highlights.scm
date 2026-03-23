@@ -1,8 +1,20 @@
-; Mojo delimiters
+; HTML nodes
+(tag_name) @tag
+(erroneous_end_tag_name) @tag.error
+(doctype) @constant
+(attribute_name) @attribute
+(attribute_value) @string
+(quoted_attribute_value) @string
+(comment) @comment
+
+["<" ">" "</" "/>"] @punctuation.bracket
+
+; Mojo block directive delimiters
 ["<%==" "<%=" "<%#" "<%" "%>"] @keyword
+
+; Mojo line directive markers
+["%==" "%=" "%#" "%"] @keyword
 
 ; Mojo comments
 (mojo_block_comment) @comment
-
-; Mojo raw text (Perl code) — inject Perl highlighting via injections.scm
-(mojo_raw_text) @string
+(mojo_line_comment) @comment
