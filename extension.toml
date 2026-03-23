@@ -1,0 +1,11 @@
+id = "mojolicious"
+name = "Mojolicious"
+version = "0.1.0"
+schema_version = 1
+authors = ["Jan Limpens"]
+description = "Mojolicious template (html.ep) support for Zed"
+repository = "https://github.com/janlimpens/zed-mojolicious"
+
+[grammars.html_ep]
+repository = "https://github.com/janlimpens/tree-sitter-html-ep"
+commit = "b850f49de17bdbe9fb345b93a4c13f74a6d056b7"

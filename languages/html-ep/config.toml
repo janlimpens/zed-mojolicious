@@ -1,0 +1,4 @@
+name = "HTML (Mojolicious)"
+grammar = "html_ep"
+path_suffixes = ["html.ep", "ep"]
+line_comments = ["# "]
